@@ -1,0 +1,21 @@
+{
+  "name": "tpmap_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "moleculer": "^0.14.8",
+    "moleculer-cli": "^0.7.1",
+    "moleculer-web": "^0.9.1",
+    "mongoose": "^5.9.25",
+    "nodemon": "^2.0.4",
+    "redis": "^3.0.2"
+  }
+}
