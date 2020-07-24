@@ -1,6 +1,9 @@
 const { ServiceBroker, ServiceRegistry } = require("moleculer");
 const HTTPServer = require("moleculer-web");
 const db = require("./connection");
+const dotenv = require("dotenv");
+
+dotenv.config();
 
 const StartBroker = new ServiceBroker({
   nodeID: "Coordinates",
@@ -16,7 +19,7 @@ StartBroker.createService({
   name: "gateway",
   mixins: [HTTPServer],
   settings: {
-    port: 8080,
+    port: process.env.PORT || 5000,
     cors: {
       origin: "*",
       methods: ["GET", "OPTIONS", "POST", "PUT", "DELETE"],
