@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "dotenv": "^8.2.0",
+    "heroku": "^7.42.5",
     "moleculer": "^0.14.8",
     "moleculer-cli": "^0.7.1",
     "moleculer-web": "^0.9.1",
