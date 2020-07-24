@@ -28,6 +28,7 @@ StartBroker.createService({
     routes: [
       {
         aliases: {
+          "GET /": "country.start",
           "GET /coordinates/country": "country.getCountryMaps", // โหลดแผนที่ทุกจังหวัด
           "GET /coordinates/province/:id": "province.getProvinceMaps", // โหลดแผนที่หนึ่งจังหวัด (ทุกอำเภอของจังหวัดนั้นๆ)
           "GET /coordinates/amphur/:id": "amphur.getAmphurMaps", // โหลดแผนที่หนึ่งอำเภอ (ทุกตำบลของทุกอำเภอนั้นๆ)

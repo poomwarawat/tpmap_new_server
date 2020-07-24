@@ -28,6 +28,9 @@ CountryBroker.createService({
       }
       return Data;
     },
+    start() {
+      return "Hello Application";
+    },
   },
 });
 
